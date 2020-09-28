@@ -1,0 +1,7 @@
+{
+  "name": "teste-coobrastur",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
