@@ -1,0 +1,99 @@
+ion-avatar {
+    margin: auto;
+    height: 128px;
+    width: 128px;
+    border: solid 4px #fff;
+    margin-top: 30px;
+}
+
+.image-upload>input {
+    display: none;
+}
+
+.scale-image {
+    object-fit: cover;
+}
+
+.profile {
+    ion-card {
+        width: 100%;
+        border-radius: 0;
+
+        ion-card-content {
+            padding: 32px;
+            color: var(--ion-color-primary);
+            text-align: center;
+
+            img {
+                height: 128px;
+                width: 128px;
+                border-radius: 50%;
+                border: solid 4px #fff;
+                display: inline;
+                object-fit: cover;
+            }
+
+            h1 {
+                margin-top: 0.5rem;
+            }
+        }
+    }
+
+    ion-item {
+        ion-input {
+            border-bottom: 1px solid var(--ion-color-tertiary);
+        }
+    }
+
+    ion-buttom {
+        button {
+            margin: 0;
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    .divcenter {
+        margin: auto;
+        width: 500px;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+}
+
+.nome {
+    margin-top: 20px;
+    color: var(--ion-text-color);
+}
+
+.tweet {
+    margin-bottom: 30px;
+    color: var(--ion-text-color);
+    font-style: italic;
+}
+
+.exibir {
+    margin-bottom: 30px;
+}
+
+.voltar {
+    margin-bottom: 20px;
+}
+
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+}
+
+.input-dados {
+    background: var(--ion-background-color);
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+ion-item {
+    --border-color: transparent; //retirar borda padrão
+}

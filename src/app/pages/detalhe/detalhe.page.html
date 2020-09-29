@@ -1,0 +1,45 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-button (click)="this.modalCtrl.dismiss()">
+        <ion-back-button defaultHref="clientes" text="Clientes"></ion-back-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="AlternarEdicao()">
+        <div *ngIf="modoEditar;else modoVisualizar">
+          <ion-icon class="animated fadeIn" slot="icon-only" name="close-outline"></ion-icon>
+        </div>
+        <ng-template #modoVisualizar>
+          <ion-icon class="animated fadeIn" slot="icon-only" name="create-outline"></ion-icon>
+        </ng-template>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+
+  <ion-card-content *ngIf="cliente">
+    <div class="animated fadeIn">
+      <ion-avatar>
+        <ion-img [src]="cliente.avatar"></ion-img>
+      </ion-avatar>
+    </div>
+
+
+    <div *ngIf="!modoEditar" class="ion-text-center">
+      <h1 class="nome">{{ cliente.first_name }} {{ cliente.last_name }}</h1>
+      <h2>{{ cliente.email }}</h2>
+    </div>
+
+    <div *ngIf="modoEditar" class="ion-text-center">
+      <ion-input class="input-dados" type="text" placeholder="Digite o nome" [(ngModel)]="nome"></ion-input>
+      <ion-input class="input-dados" type="text" placeholder="Digite o email" [(ngModel)]="email"></ion-input>
+      <ion-button (click)="AtualizarCliente()" expand="block" shape="round">
+        Salvar
+      </ion-button>
+    </div>
+  </ion-card-content>
+
+</ion-content>

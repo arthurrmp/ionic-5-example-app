@@ -1,0 +1,13 @@
+.input-dados {
+    background: var(--ion-background-color);
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    --padding-start: 10px;
+    max-width: 300px;
+}
+
+ion-item {
+    --border-color: transparent; //retirar borda padrão
+    --background: transparent;
+}

@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title> <img style="height: 40px" src="../../../assets/logo_name.png"></ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-title>Lista de clientes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="animated fadeInDown">
+
+    <div *ngIf="clientes">
+      <ion-list>
+        <ion-item button (click)="ExibirDetalhe(cliente.id)" *ngFor="let cliente of clientes.data">
+          <ion-avatar slot="start">
+            <img [src]="cliente.avatar">
+          </ion-avatar>
+          <ion-label>
+            <h2>{{ cliente.first_name }} {{ cliente.last_name}}</h2>
+            <h3>{{ cliente.email }}</h3>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+
+      <ion-toolbar class="ion-margin-top" color="transparent">
+        <div class="ion-text-center">
+          <ion-label>Página {{clientes.page}}/{{clientes.total_pages}}</ion-label>
+        </div>
+        <ion-buttons [style.visibility]="(this.pagina !== 1) ? 'visible' : 'hidden' " slot="start">
+          <ion-button color="primary" fill="clear" (click)="paginaAnterior()">
+            <ion-icon slot="start" name="caret-back-outline"></ion-icon>
+            Anterior
+          </ion-button>
+        </ion-buttons>
+
+        <ion-buttons [style.visibility]="(this.pagina < this.clientes.total_pages) ? 'visible' : 'hidden' " slot="end">
+          <ion-button color="primary" fill="clear" (click)="paginaProxima()">
+            <ion-icon slot="end" name="caret-forward-outline"></ion-icon>
+            Próximo
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </div>
+  </div>
+</ion-content>
