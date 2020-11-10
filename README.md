@@ -1,21 +1,41 @@
-# teste-coobrastur-frontend
 
-Projeto criado usando Ionic (Angular) para o teste de front-end da Coobrastur. 
+# ![UK Flag](https://i.imgur.com/uMAXKKS.png) Ionic 5 (Example App)
 
-**Vídeo demonstração**
+Created with Ionic (Angular) /  animate.css, data consumed  from the reqres.in API.
 
-[![](http://img.youtube.com/vi/WkQfFs78fTU/0.jpg)](https://www.youtube.com/watch?v=WkQfFs78fTU "demonstração - Coobrastur")
+# How to install
 
-# Instalação
+1- Install [Node.JS](https://nodejs.org/).
 
-1- Clone o repositório.
-
-1- Instale o [Node.JS](https://nodejs.org/pt-br/).
-
-2- Abra uma janela do terminal na pasta do projeto e execute os seguintes comandos (instalação do ionic e instalação do módulos npm): 
-
+2- Install Ionic CLI with:
    **npm install -g @ionic/cli**
    
-   **npm i**
+3- Clone the repo on the folder you want using:
+   **git clone https://github.com/arthurrmp/ionic-5-example-app.git**
    
-3- Para iniciar um web server de desenvolvimento e testes, você pode usar o comando **ionic serve** no terminal na pasta do projeto.
+4- Go to the created folder and install the required packages
+   **cd ionic-5-example-app && npm install**
+   
+5- To start the webserver, you can use the command:
+   **ionic serve**
+
+
+# ![Brazilian Flag](https://i.imgur.com/hQgQaFB.png) Ionic 5 (App de exemplo)
+
+Criado com Ionic (Angular), animate.css, dados consumidos da API reqres.in.
+
+# Como instalar
+
+1- Instale o [Node.JS](https://nodejs.org/).
+
+2- Abra uma janela de comando e instale a CLI do Ionic com:
+   **npm install -g @ionic/cli**
+   
+3- Clone o repositório na pasta que você quer usando:
+   **git clone https://github.com/arthurrmp/ionic-5-example-app.git**
+   
+4- Vá para a pasta recém-criada do projeto e instale os pacotes requeridos usando: 
+   **cd ionic-5-example-app && npm install**
+   
+5- Para iniciar o app, use:
+   **ionic serve**
