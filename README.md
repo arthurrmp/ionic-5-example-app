@@ -51,7 +51,7 @@ Este repositório foi criado com Ionic 5 (Angular) e contém:<br>
 3- Clone o repositório na pasta que você quer usando:
    **git clone https://github.com/arthurrmp/ionic-5-example-app.git**
    
-4- Vá para a pasta recém-criada do projeto e instale os pacotes requeridos usando: 
+4- Vá para a pasta criada e instale os pacotes necessários usando: 
    **cd ionic-5-example-app && npm install**
    
 5- Para iniciar o app, use:
