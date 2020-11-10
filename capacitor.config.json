@@ -1,6 +1,6 @@
 {
   "appId": "io.ionic.starter",
-  "appName": "teste-coobrastur",
+  "appName": "test-app-example",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",

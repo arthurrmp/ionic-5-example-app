@@ -50,6 +50,7 @@ export class AppComponent implements OnInit {
     //Ao ser notificado de alterações na rota, marca no side-menu a página atual
     this.router.events.subscribe((evento) => {
       if (evento instanceof NavigationEnd) {
+        console.log(evento.url);
         this.atualizarSideMenu(evento.url.replace('/', ''));
       }
     });
@@ -57,8 +58,12 @@ export class AppComponent implements OnInit {
 
   // Verifica no objeto criado acima qual o Index que deverá ser setado como selecionado no side-menu
   atualizarSideMenu(pagina?) {
-    this.selectedIndex = this.appPages.findIndex(page => page.url.toLowerCase() === pagina.toLowerCase());
-  }
+    if (!pagina || pagina == `/`){
+      this.selectedIndex = 0;
+    } else {
+      this.selectedIndex = this.appPages.findIndex(page => page.url.toLowerCase() === pagina.toLowerCase());
+    }
+    }
 
 
 }
