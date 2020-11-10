@@ -13,7 +13,7 @@ Created with Ionic (Angular) /  animate.css, data consumed  from the reqres.in A
 3- Clone the repo on the folder you want using:
    **git clone https://github.com/arthurrmp/ionic-5-example-app.git**
    
-4- Go to the created folder and install the required packages
+4- Go to the created folder and install the required packages:
    **cd ionic-5-example-app && npm install**
    
 5- To start the webserver, you can use the command:
