@@ -1,10 +1,10 @@
 
 <img height="450" align="right" src="https://i.imgur.com/zIjX5lb.gif">
 
-# ![UK Flag](https://i.imgur.com/uMAXKKS.png) [english version](https://github.com/arthurrmp/ionic-5-example-app/blob/master/README.md)
-# ![Brazilian Flag](https://i.imgur.com/hQgQaFB.png) [versão em pt-br](https://github.com/arthurrmp/ionic-5-example-app/blob/master/README-pt-br.md)
+# Ionic 5 (Example App)
 
-Ionic 5 (Example App)
+![UK Flag](https://i.imgur.com/uMAXKKS.png) <sup>[english version](https://github.com/arthurrmp/ionic-5-example-app/blob/master/README.md)</sup>
+![Brazilian Flag](https://i.imgur.com/hQgQaFB.png) <sup>[versão em pt-br](https://github.com/arthurrmp/ionic-5-example-app/blob/master/README-pt-br.md)</sup>
 
 This repo was created with Ionic 5 (Angular) and contains:<br>
 
