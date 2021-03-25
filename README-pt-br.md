@@ -1,6 +1,6 @@
 <img height="450" align="right" src="https://i.imgur.com/zIjX5lb.gif">
 
-# Ionic 5 (App de exemplo)
+# Ionic 5 (APP CRUD)
 
 ![UK Flag](https://i.imgur.com/uMAXKKS.png) <sup>[english version](https://github.com/arthurrmp/ionic-5-example-app/blob/master/README.md)</sup>
 ![Brazilian Flag](https://i.imgur.com/hQgQaFB.png) <sup>[versão em pt-br](https://github.com/arthurrmp/ionic-5-example-app/blob/master/README-pt-br.md)</sup>
